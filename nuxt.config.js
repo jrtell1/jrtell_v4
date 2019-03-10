@@ -1,6 +1,5 @@
 const pkg = require('./package');
 
-
 module.exports = {
   mode: 'universal',
 
@@ -8,14 +7,18 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'John-Robin Tell',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Cinzel+Decorative' },
+      // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Cormorant+Unicase' },
+      // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lekton' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=IM+Fell+English+SC' },
     ]
   },
 
@@ -27,9 +30,7 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [
-    '~/assets/css/tailwind.css'
-  ],
+  css: [],
 
   /*
   ** Plugins to load before mounting the App
