@@ -38,12 +38,10 @@
     border-radius: 50%;
     border: 5px solid #adadad;
     overflow: hidden;
+    -webkit-user-drag: none;
   }
 
   .title {
-    /*font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;*/
-    /*font-family: 'Cinzel Decorative', cursive;*/
-    /*font-family: 'Cormorant Unicase', serif;*/
     font-family: 'IM Fell English SC', serif;
     display: block;
     font-weight: 300;
@@ -76,9 +74,6 @@
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
-    /*background: linear-gradient(rgba(23,23,56, 0.8), rgba(23,23,56, 0.8)), url("https://res.cloudinary.com/jrtell/image/upload/c_crop,fl_progressive,q_auto,w_1920,h_1080/v1552236316/jrtell/bg2.jpg") top no-repeat;*/
-    /*background: linear-gradient(rgba(25,19,8, 0.8), rgba(25,19,8, 0.8)), url("https://res.cloudinary.com/jrtell/image/upload/c_crop,fl_progressive,q_auto,w_1920,h_1080/v1552236316/jrtell/bg2.jpg") top no-repeat;*/
-    /*background: linear-gradient(rgba(14,16,61, 0.75), rgba(14,16,61, 0.75)), url("https://res.cloudinary.com/jrtell/image/upload/c_crop,fl_progressive,q_auto,w_1920,h_1080/v1552236316/jrtell/bg2.jpg") top no-repeat;*/
     background: linear-gradient(rgba(2,2,2, 0.75), rgba(2,2,2, 0.75)), url("https://res.cloudinary.com/jrtell/image/upload/c_crop,fl_progressive,q_auto,w_1920,h_1080/v1552236316/jrtell/bg2.jpg") top no-repeat;
     background-size: cover;
     background-attachment: fixed;
