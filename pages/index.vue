@@ -2,7 +2,7 @@
   <div>
     <section class="hero">
       <div class="container">
-        <div>
+        <div class="presentation">
           <img class="portrait fade-on-load" src="https://res.cloudinary.com/jrtell/image/upload/w_200,h_200,c_fill,g_face/v1552242769/jrtell/Snapchat-1254887129.jpg"/>
           <h1 class="title fade-left-on-load">
             John-Robin Tell
@@ -47,6 +47,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .presentation {
+    margin-bottom: 50px;
   }
 
   .simplicity-container {
