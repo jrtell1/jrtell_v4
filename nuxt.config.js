@@ -24,8 +24,6 @@ module.exports = {
   */
   loading: { color: '#fff' },
 
-  router: { base: '/jrtell_v4/' },
-
   /*
   ** Global CSS
   */
