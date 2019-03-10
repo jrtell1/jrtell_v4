@@ -3,7 +3,7 @@
     <section class="hero">
       <div class="container">
         <div>
-          <img class="portrait fade-top-on-load" src="https://res.cloudinary.com/jrtell/image/upload/w_200,h_200,c_fill,g_face/v1552242769/jrtell/Snapchat-1254887129.jpg"/>
+          <img class="portrait fade-on-load" src="https://res.cloudinary.com/jrtell/image/upload/w_200,h_200,c_fill,g_face/v1552242769/jrtell/Snapchat-1254887129.jpg"/>
           <h1 class="title fade-left-on-load">
             John-Robin Tell
           </h1>
@@ -103,23 +103,24 @@
     background-attachment: fixed;
   }
 
+  .fade-on-load {
+    animation: fadein 1000ms;
+  }
+
   .fade-top-on-load {
     animation: fadeintop 1000ms;
   }
 
-  @keyframes fadeintop {
-    from {
-      opacity: 0;
-      transform: translateY(-200px);
-    }
-    to   {
-      opacity: 1;
-      transform: translateY(0px);
-    }
-  }
-
   .fade-bottom-on-load {
     animation: fadeinbottom 1000ms;
+  }
+
+  .fade-left-on-load {
+    animation: fadeinleft 1000ms;
+  }
+
+  .fade-right-on-load {
+    animation: fadeinright 1000ms;
   }
 
   @keyframes fadeinbottom {
@@ -133,8 +134,24 @@
     }
   }
 
-  .fade-left-on-load {
-    animation: fadeinleft 1000ms;
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to   {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeintop {
+    from {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+    to   {
+      opacity: 1;
+      transform: translateY(0px);
+    }
   }
 
   @keyframes fadeinleft {
@@ -146,11 +163,6 @@
       opacity: 1;
       transform: translateX(0px);
     }
-  }
-
-
-  .fade-right-on-load {
-    animation: fadeinright 1000ms;
   }
 
   @keyframes fadeinright {
