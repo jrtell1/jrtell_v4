@@ -69,6 +69,7 @@
   }
 
   .hero {
+    overflow: hidden;
     min-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
