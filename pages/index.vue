@@ -16,6 +16,10 @@
           </div>
         </div>
       </div>
+      <div class="arrows">
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+      </div>
     </section>
 
     <section class="simplicity-container">
@@ -55,6 +59,22 @@
     background: #35495e;
     color: white;
     overflow: hidden;
+  }
+
+  .arrows {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    animation: hover 1500ms infinite;
+  }
+
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
   }
 
   .portrait {
@@ -173,6 +193,18 @@
     to   {
       opacity: 1;
       transform: translateX(0px);
+    }
+  }
+
+  @keyframes hover {
+    0% {
+      transform: translateY(-10px);
+    }
+    50%   {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-10px);
     }
   }
 
