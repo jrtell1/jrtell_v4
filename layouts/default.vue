@@ -24,6 +24,14 @@ html {
   margin: 0;
 }
 
+.button {
+  transition: transform 100ms ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
 .button--green {
   display: inline-block;
   border-radius: 4px;
