@@ -1,20 +1,26 @@
 <template>
-  <div class="hero">
-  <section class="container">
-    <div>
-      <img class="portrait" src="https://res.cloudinary.com/jrtell/image/upload/w_200,h_200,c_fill,g_face/v1532716014/jrtell/Snapchat-483615629.jpg"/>
-      <h1 class="title">
-        John-Robin Tell
-      </h1>
-      <h2 class="subtitle">
-        Fullstack Developer
-      </h2>
-      <div class="links">
-        <a class="button--green" href="https://www.linkedin.com/in/john-robin-tell-b8bb235b/" target="_blank">LinkedIn</a>
-        <a class="button--grey" href="https://github.com/jrtell1" target="_blank">GitHub</a>
+  <div>
+    <section class="hero">
+      <div class="container">
+        <div>
+          <img class="portrait fade-top-on-load" src="https://res.cloudinary.com/jrtell/image/upload/w_200,h_200,c_fill,g_face/v1532716014/jrtell/Snapchat-483615629.jpg"/>
+          <h1 class="title fade-left-on-load">
+            John-Robin Tell
+          </h1>
+          <h2 class="subtitle fade-right-on-load">
+            Fullstack Developer
+          </h2>
+          <div class="links">
+            <a class="button--green fade-bottom-on-load" href="https://www.linkedin.com/in/john-robin-tell-b8bb235b/" target="_blank">LinkedIn</a>
+            <a class="button--grey fade-bottom-on-load" href="https://github.com/jrtell1" target="_blank">GitHub</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="container">
+
+    </section>
   </div>
 </template>
 
@@ -77,6 +83,67 @@
     background: linear-gradient(rgba(2,2,2, 0.75), rgba(2,2,2, 0.75)), url("https://res.cloudinary.com/jrtell/image/upload/c_crop,fl_progressive,q_auto,w_1920,h_1080/v1552236316/jrtell/bg2.jpg") top no-repeat;
     background-size: cover;
     background-attachment: fixed;
+  }
+
+  .fade-top-on-load {
+    animation: fadeintop 1000ms;
+  }
+
+  @keyframes fadeintop {
+    from {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+    to   {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  .fade-bottom-on-load {
+    animation: fadeinbottom 1000ms;
+  }
+
+  @keyframes fadeinbottom {
+    from {
+      opacity: 0;
+      transform: translateY(200px);
+    }
+    to   {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  .fade-left-on-load {
+    animation: fadeinleft 1000ms;
+  }
+
+  @keyframes fadeinleft {
+    from {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    to   {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+
+  .fade-right-on-load {
+    animation: fadeinright 1000ms;
+  }
+
+  @keyframes fadeinright {
+    from {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    to   {
+      opacity: 1;
+      transform: translateX(0px);
+    }
   }
 
   @media screen and (max-width: 600px) {
