@@ -3,7 +3,7 @@
     <section class="hero">
       <div class="container">
         <div class="presentation">
-          <img class="portrait fade-on-load" src="https://res.cloudinary.com/jrtell/image/upload/w_200,h_200,c_fill,g_face/v1552242769/jrtell/Snapchat-1254887129.jpg"/>
+          <img class="portrait portrait--animation" src="https://res.cloudinary.com/jrtell/image/upload/w_200,h_200,c_fill,g_face/v1552242769/jrtell/Snapchat-1254887129.jpg"/>
           <h1 class="title fade-left-on-load">
             John-Robin Tell
           </h1>
@@ -11,8 +11,8 @@
             Fullstack Developer
           </h2>
           <div class="links">
-            <a class="button button--green fade-bottom-on-load" href="https://www.linkedin.com/in/john-robin-tell-b8bb235b/" target="_blank">LinkedIn</a>
-            <a class="button button--grey fade-bottom-on-load" href="https://github.com/jrtell1" target="_blank">GitHub</a>
+            <a class="button button--green button--animation" href="https://www.linkedin.com/in/john-robin-tell-b8bb235b/" target="_blank">LinkedIn</a>
+            <a class="button button--grey button--animation" href="https://github.com/jrtell1" target="_blank">GitHub</a>
           </div>
         </div>
       </div>
@@ -127,15 +127,11 @@
     background-attachment: fixed;
   }
 
-  .fade-on-load {
+  .portrait--animation {
     animation: fadein 1000ms;
   }
 
-  .fade-top-on-load {
-    animation: fadeintop 1000ms;
-  }
-
-  .fade-bottom-on-load {
+  .button--animation {
     animation: fadeinbottom 1000ms;
   }
 
