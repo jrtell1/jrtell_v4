@@ -30,10 +30,17 @@
     transition: all 100ms ease-in-out;
     padding: 10px 30px;
     text-decoration: none;
+    border: 1px solid #35495e;
   }
 
   .button:hover {
     transform: translateY(-2px);
+    color: #ffffff;
+    background-color: #35495e;
+  }
+
+  .button:active {
+    transform: translateY(1px);
   }
 
   .button--green {
@@ -44,16 +51,6 @@
   .button--green:hover {
     color: #fff;
     background-color: #3b8070;
-  }
-
-  .button--grey {
-    border: 1px solid #35495e;
-    color: #35495e;
-  }
-
-  .button--grey:hover {
-    color: #fff;
-    background-color: #35495e;
   }
 
   ::selection {

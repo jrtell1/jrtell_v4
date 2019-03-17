@@ -11,8 +11,14 @@
             Fullstack Developer
           </h2>
           <div class="links">
-            <a class="button button--green button--animation" href="https://www.linkedin.com/in/john-robin-tell-b8bb235b/" target="_blank">LinkedIn</a>
-            <a class="button button--grey button--animation" href="https://github.com/jrtell1" target="_blank">GitHub</a>
+            <a class="button button--linkedin button--animation" href="https://www.linkedin.com/in/john-robin-tell-b8bb235b/" target="_blank">
+              <fa :icon="['fab', 'linkedin']"></fa>
+              LinkedIn
+            </a>
+            <a class="button button--github button--animation" href="https://github.com/jrtell1" target="_blank">
+              <fa :icon="['fab', 'github-square']"></fa>
+              GitHub
+            </a>
           </div>
         </div>
       </div>
@@ -39,7 +45,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   .container {
     margin: 0 auto;
     min-height: 100vh;
@@ -47,6 +53,31 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .button {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .button--linkedin {
+    border-color: #4F6D7A;
+    color: #4F6D7A;
+  }
+
+  .button--linkedin:hover {
+    background: #4F6D7A;
+    color: #ffffff;
+  }
+
+  .button--github {
+    border-color: #6e5494;
+    color: #6e5494;
+  }
+
+  .button--github:hover {
+    background: #6e5494;
+    color: #ffffff;
   }
 
   .presentation {
@@ -112,8 +143,6 @@
   .hero {
     overflow: hidden;
     min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
