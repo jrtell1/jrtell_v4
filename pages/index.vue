@@ -3,7 +3,7 @@
     <section class="hero">
       <div class="container">
         <div class="presentation">
-          <img class="portrait portrait--animation" src="https://res.cloudinary.com/jrtell/image/upload/w_200,h_200,c_fill,g_face,f_auto/v1552242867/jrtell/20190310_155108"/>
+          <img class="portrait portrait--animation" src="https://res.cloudinary.com/jrtell/image/upload/w_200,h_200,c_fill,g_face,f_auto/v1552242867/jrtell/20190310_155108" alt="Portrait"/>
           <h1 class="title fade-left-on-load">
             John-Robin Tell
           </h1>
