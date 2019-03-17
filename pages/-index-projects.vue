@@ -13,7 +13,7 @@
           The lunch menu needed to be dynamically updated by non-technical users. I settled for <a href="https://www.contentful.com/" target="_blank" rel="noopener noreferrer">Contentful</a> as the headless CMS and backend for this.
         </p>
 
-        <a class="button project__button" href="" target="_blank" rel="noopener noreferrer" disabled>
+        <a class="button project__button" target="_blank" rel="noopener noreferrer" disabled>
           Check out project
           <fa :icon="['fas', 'external-link-alt']"></fa>
         </a>
@@ -31,7 +31,7 @@
           Built as a PWA (Progressive Web Application). A platform for direct trade between local producers and consumers in communities.
         </p>
 
-        <a class="button project__button" href="" target="_blank" rel="noopener noreferrer" disabled>
+        <a class="button project__button" target="_blank" rel="noopener noreferrer" disabled>
           Check out project
           <fa :icon="['fas', 'external-link-alt']"></fa>
         </a>
