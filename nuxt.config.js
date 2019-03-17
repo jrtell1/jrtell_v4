@@ -42,6 +42,9 @@ module.exports = {
     ['nuxt-fontawesome', {
       component: 'fa',
       imports: [{
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['faExternalLinkAlt']
+      }, {
         set: '@fortawesome/free-brands-svg-icons',
         icons: ['faLinkedin', 'faGithubSquare']
       }]

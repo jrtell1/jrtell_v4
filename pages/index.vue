@@ -11,11 +11,11 @@
             Fullstack Developer
           </h2>
           <div class="links">
-            <a class="button button--linkedin button--animation" href="https://www.linkedin.com/in/john-robin-tell-b8bb235b/" target="_blank">
+            <a class="button button--linkedin button--animation" href="https://www.linkedin.com/in/john-robin-tell-b8bb235b/" target="_blank" rel="noopener noreferrer">
               <fa :icon="['fab', 'linkedin']"></fa>
               LinkedIn
             </a>
-            <a class="button button--github button--animation" href="https://github.com/jrtell1" target="_blank">
+            <a class="button button--github button--animation" href="https://github.com/jrtell1" target="_blank" rel="noopener noreferrer">
               <fa :icon="['fab', 'github-square']"></fa>
               GitHub
             </a>
@@ -36,6 +36,25 @@
         <h2 class="title">Excellence</h2>
       </div>
     </section>
+
+    <section class="section">
+      <div class="container">
+        <h3 class="section__title">Latest projects</h3>
+        <div class="project">
+          <div class="project__image">
+            <img src="https://res.cloudinary.com/jrtell/image/upload/c_scale,f_auto,q_auto,w_300/v1552838252/jrtell/hemlagat" alt="Restaurang Hemlagat website"/>
+          </div>
+          <div class="project__content">
+            <h2 class="project__title">Restaurang Hemlagat</h2>
+            <p>My first jamstack!</p>
+            <a class="button project__button" href="" target="_blank" rel="noopener noreferrer">
+              Open website
+              <fa :icon="['fas', 'external-link-alt']"></fa>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -46,13 +65,25 @@
 </script>
 
 <style scoped>
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .section__title {
+    display: block;
+    font-weight: 300;
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
   .container {
     margin: 0 auto;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    max-width: 900px;
+    padding: 0 20px;
   }
 
   .button {
@@ -86,7 +117,7 @@
 
   .simplicity-container {
     margin: 0 auto;
-    min-height: 50vh;
+    padding: 60px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,5 +272,48 @@
     .subtitle {
       font-size: 22px;
     }
+  }
+
+  .project {
+    display: flex;
+    background: #eff2f7;
+    transition: all 200ms ease-in-out;
+    padding: 20px;
+  }
+
+  .project:hover {
+    color: #ffffff;
+    background: #35495e;
+  }
+
+  .project__image {
+    /*margin-right: 20px;*/
+  }
+
+  .project__image img {
+    display: block;
+  }
+
+  .project__content {
+    padding: 0 20px;
+  }
+
+  .project__title {
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  .project__button {
+    margin: 20px 0 0 0;
+  }
+
+  .project:hover .project__button {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+
+  .project:hover .project__button:hover {
+    color: #22292f;
+    background-color: #ffffff;
   }
 </style>

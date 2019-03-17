@@ -28,9 +28,11 @@
     display: inline-block;
     border-radius: 4px;
     transition: all 100ms ease-in-out;
-    padding: 10px 30px;
+    padding: 10px 20px;
     text-decoration: none;
     border: 1px solid #35495e;
+    color: #35495e;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   }
 
   .button:hover {
