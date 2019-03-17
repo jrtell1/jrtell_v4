@@ -168,7 +168,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(rgba(2,2,2, 0.55), rgba(2,2,2, 0.55)), url("https://res.cloudinary.com/jrtell/image/upload/c_fill,fl_progressive,q_auto,e_blur:500,w_1920,f_auto/v1552236316/jrtell/bg2.jpg") top no-repeat;
+    background: linear-gradient(rgba(2,2,2, 0.25), rgba(2,2,2, 0.55)), url("https://res.cloudinary.com/jrtell/image/upload/c_fill,fl_progressive,q_auto,w_1920,f_auto/v1552236316/jrtell/bg2.jpg") top no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
