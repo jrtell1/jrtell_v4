@@ -62,5 +62,6 @@
 
   ::selection {
     background: #2c4968;
+    color: #ffffff;
   }
 </style>
