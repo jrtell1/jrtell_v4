@@ -50,6 +50,18 @@
     transform: translateY(1px);
   }
 
+  .button[disabled] {
+    opacity: 0.5;
+    cursor: default;
+  }
+
+  .button[disabled]:hover,
+  .button[disabled]:active {
+    transform: none;
+    background-color: transparent;
+    color: #35495e;
+  }
+
   .button--green {
     border: 1px solid #3b8070;
     color: #3b8070;
