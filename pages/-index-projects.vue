@@ -32,6 +32,7 @@
     background: #eff2f7;
     transition: all 200ms ease-in-out;
     padding: 20px;
+    border: 2px solid transparent;
   }
 
   @media screen and (max-width: 600px) {
@@ -41,13 +42,8 @@
   }
 
   .project:hover {
-    color: #ffffff;
-    background: #35495e;
+    border-color: #35495e;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-  }
-
-  .project:hover a {
-    color: #ffffff;
   }
 
   .project__image {
@@ -75,15 +71,5 @@
 
   .project__button {
     margin: 20px 0 0 0;
-  }
-
-  .project:hover .project__button {
-    border-color: #ffffff;
-    color: #ffffff;
-  }
-
-  .project:hover .project__button:hover {
-    color: #22292f;
-    background-color: #ffffff;
   }
 </style>

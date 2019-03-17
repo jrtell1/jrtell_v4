@@ -72,7 +72,7 @@
 
   .container {
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1000px;
     padding: 0 20px;
   }
 
