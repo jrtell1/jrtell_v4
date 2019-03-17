@@ -179,9 +179,7 @@
   }
 
   .button--animation {
-    animation: fadeinbottom 1000ms forwards;
-    opacity: 0;
-    animation-delay: 200ms;
+    animation: fadeinbottom 1000ms;
   }
 
   .fade-left-on-load {
