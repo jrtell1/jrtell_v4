@@ -15,6 +15,7 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
+    color: #22292f;
   }
 
   *,
@@ -22,6 +23,10 @@
   *:after {
     box-sizing: border-box;
     margin: 0;
+  }
+
+  a {
+    color: #35495e;
   }
 
   .button {

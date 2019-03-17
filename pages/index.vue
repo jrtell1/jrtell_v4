@@ -40,27 +40,17 @@
     <section class="section">
       <div class="container">
         <h3 class="section__title">Latest projects</h3>
-        <div class="project">
-          <div class="project__image">
-            <img src="https://res.cloudinary.com/jrtell/image/upload/c_scale,f_auto,q_auto,w_300/v1552838252/jrtell/hemlagat" alt="Restaurang Hemlagat website"/>
-          </div>
-          <div class="project__content">
-            <h2 class="project__title">Restaurang Hemlagat</h2>
-            <p>My first jamstack!</p>
-            <a class="button project__button" href="" target="_blank" rel="noopener noreferrer">
-              Open website
-              <fa :icon="['fas', 'external-link-alt']"></fa>
-            </a>
-          </div>
-        </div>
+        <index-projects/>
       </div>
     </section>
   </div>
 </template>
 
 <script>
-  export default {
+  import IndexProjects from './-index-projects';
 
+  export default {
+    components: { IndexProjects }
   }
 </script>
 
@@ -272,48 +262,5 @@
     .subtitle {
       font-size: 22px;
     }
-  }
-
-  .project {
-    display: flex;
-    background: #eff2f7;
-    transition: all 200ms ease-in-out;
-    padding: 20px;
-  }
-
-  .project:hover {
-    color: #ffffff;
-    background: #35495e;
-  }
-
-  .project__image {
-    /*margin-right: 20px;*/
-  }
-
-  .project__image img {
-    display: block;
-  }
-
-  .project__content {
-    padding: 0 20px;
-  }
-
-  .project__title {
-    font-size: 40px;
-    font-weight: 300;
-  }
-
-  .project__button {
-    margin: 20px 0 0 0;
-  }
-
-  .project:hover .project__button {
-    border-color: #ffffff;
-    color: #ffffff;
-  }
-
-  .project:hover .project__button:hover {
-    color: #22292f;
-    background-color: #ffffff;
   }
 </style>
