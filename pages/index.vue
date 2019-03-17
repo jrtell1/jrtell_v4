@@ -11,7 +11,7 @@
             Fullstack Developer
           </h2>
           <div class="links">
-            <a class="button button--linkedin button--animation-1" href="https://www.linkedin.com/in/john-robin-tell-b8bb235b/" target="_blank" rel="noopener noreferrer">
+            <a class="button button--business button--animation-1" href="https://www.linkedin.com/in/john-robin-tell-b8bb235b/" target="_blank" rel="noopener noreferrer">
               <fa :icon="['fab', 'linkedin']"></fa>
               LinkedIn
             </a>
@@ -81,12 +81,12 @@
     margin-right: 5px;
   }
 
-  .button--linkedin {
+  .button--business {
     border-color: #4F6D7A;
     color: #4F6D7A;
   }
 
-  .button--linkedin:hover {
+  .button--business:hover {
     background: #4F6D7A;
     color: #ffffff;
   }
