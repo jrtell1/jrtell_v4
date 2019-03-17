@@ -142,6 +142,7 @@
 
   .title {
     font-family: 'IM Fell English SC', serif;
+    line-height: 80px;
     display: block;
     font-weight: 300;
     font-size: 60px;
@@ -178,15 +179,21 @@
   }
 
   .button--animation {
-    animation: fadeinbottom 1000ms;
+    animation: fadeinbottom 1000ms forwards;
+    opacity: 0;
+    animation-delay: 200ms;
   }
 
   .fade-left-on-load {
-    animation: fadeinleft 1000ms;
+    animation: fadeinleft 1000ms forwards;
+    opacity: 0;
+    animation-delay: 200ms;
   }
 
   .fade-right-on-load {
-    animation: fadeinright 1000ms;
+    animation: fadeinright 1000ms forwards;
+    opacity: 0;
+    animation-delay: 200ms;
   }
 
   @keyframes fadeinbottom {
