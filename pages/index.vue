@@ -264,6 +264,7 @@
   @media screen and (max-width: 600px) {
     .title {
       font-size: 40px;
+      line-height: 50px;
     }
 
     .subtitle {
