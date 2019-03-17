@@ -11,11 +11,11 @@
             Fullstack Developer
           </h2>
           <div class="links">
-            <a class="button button--linkedin button--animation" href="https://www.linkedin.com/in/john-robin-tell-b8bb235b/" target="_blank" rel="noopener noreferrer">
+            <a class="button button--linkedin button--animation-1" href="https://www.linkedin.com/in/john-robin-tell-b8bb235b/" target="_blank" rel="noopener noreferrer">
               <fa :icon="['fab', 'linkedin']"></fa>
               LinkedIn
             </a>
-            <a class="button button--github button--animation" href="https://github.com/jrtell1" target="_blank" rel="noopener noreferrer">
+            <a class="button button--github button--animation-2" href="https://github.com/jrtell1" target="_blank" rel="noopener noreferrer">
               <fa :icon="['fab', 'github-square']"></fa>
               GitHub
             </a>
@@ -178,8 +178,12 @@
     animation: fadein 1000ms;
   }
 
-  .button--animation {
+  .button--animation-1 {
     animation: fadeinbottom 1000ms;
+  }
+
+  .button--animation-2 {
+    animation: fadeinbottom 1300ms;
   }
 
   .fade-left-on-load {
