@@ -15,6 +15,10 @@
               <fa :icon="['fab', 'linkedin']"></fa>
               LinkedIn
             </a>
+            <a class="button button--linkedin button--animation" href="https://www.linkedin.com/in/john-robin-tell-b8bb235b/" target="_blank" rel="noopener noreferrer">
+              <fa :icon="['fab', 'linkedin']"></fa>
+              LinkedIn
+            </a>
             <a class="button button--github button--animation" href="https://github.com/jrtell1" target="_blank" rel="noopener noreferrer">
               <fa :icon="['fab', 'github-square']"></fa>
               GitHub
