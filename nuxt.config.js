@@ -17,19 +17,16 @@ module.exports = {
       { name: 'theme-color', content: '#35495e' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: []
+    link: [
+      { rel: 'preload', href: 'https://fonts.googleapis.com/css?family=IM+Fell+English+SC', as: 'style', crossorigin: 'anonymous' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=IM+Fell+English+SC' }
+    ]
   },
 
   /*
   ** Customize the progress-bar color
   */
   loading: { color: '#fff' },
-
-  webfontloader: {
-    google: {
-      families: ['IM+Fell+English+SC']
-    }
-  },
 
   /*
   ** Global CSS
@@ -45,7 +42,6 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    'nuxt-webfontloader',
     ['nuxt-fontawesome', {
       component: 'fa',
       imports: [{
