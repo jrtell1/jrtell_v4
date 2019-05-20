@@ -5,7 +5,7 @@
         <img src="https://res.cloudinary.com/jrtell/image/upload/c_scale,f_auto,q_auto,w_300/v1552838252/jrtell/hemlagat" alt="Restaurang Hemlagat website"/>
       </div>
       <div class="project__content">
-        <h2 class="project__title">Restaurang Hemlagat - Work in progress</h2>
+        <h2 class="project__title">Restaurang Hemlagat</h2>
         <p>
           My first jamstack!<br>
           The objective was to create a quick and simple website. I decided to use <a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer">Nuxt.js</a> and its
@@ -13,7 +13,7 @@
           The lunch menu needed to be dynamically updated by non-technical users. I settled for <a href="https://www.contentful.com/" target="_blank" rel="noopener noreferrer">Contentful</a> as the headless CMS and backend for this.
         </p>
 
-        <a class="button project__button" target="_blank" rel="noopener noreferrer" disabled>
+        <a class="button project__button" target="_blank" rel="noopener noreferrer" href="https://www.hemlagatjonkoping.se/">
           Check out project
           <fa :icon="['fas', 'external-link-alt']"></fa>
         </a>
