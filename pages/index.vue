@@ -250,7 +250,6 @@
   .proficiencies__column li {
     list-style: none;
     padding: 2px 10px;
-    float: left;
   }
 
   .proficiencies__column li::before {
