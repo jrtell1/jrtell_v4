@@ -50,7 +50,6 @@
     flex: 1;
   }
 
-
   .proficiencies__title {
     font-size: 18px;
     font-weight: 500;
