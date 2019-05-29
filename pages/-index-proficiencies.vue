@@ -1,39 +1,36 @@
 <template>
-  <div>
-    <h3 class="section__title">Proficiencies</h3>
-    <div class="proficiencies">
-      <div class="proficiencies__column">
-        <h4 class="proficiencies__title">Languages</h4>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>PHP</li>
-          <li>SQL</li>
-        </ul>
-      </div>
-      <div class="proficiencies__column">
-        <h4 class="proficiencies__title">Frameworks</h4>
-        <ul>
-          <li>VueJs</li>
-          <li>NuxtJs</li>
-          <li>Laravel</li>
-          <li>Socket.io</li>
-          <li>Tailwindcss</li>
-          <li>Bulma</li>
-        </ul>
-      </div>
-      <div class="proficiencies__column">
-        <h4 class="proficiencies__title">Tools</h4>
-        <ul>
-          <li>Docker</li>
-          <li>GitHub</li>
-          <li>Netlify</li>
-          <li>Cloudinary CDN</li>
-          <li>Webpack</li>
-          <li>Nginx</li>
-        </ul>
-      </div>
+  <div class="proficiencies">
+    <div class="proficiencies__column">
+      <h4 class="proficiencies__title">Languages</h4>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>SQL</li>
+      </ul>
+    </div>
+    <div class="proficiencies__column">
+      <h4 class="proficiencies__title">Frameworks</h4>
+      <ul>
+        <li>VueJs</li>
+        <li>NuxtJs</li>
+        <li>Laravel</li>
+        <li>Socket.io</li>
+        <li>Tailwindcss</li>
+        <li>Bulma</li>
+      </ul>
+    </div>
+    <div class="proficiencies__column">
+      <h4 class="proficiencies__title">Tools</h4>
+      <ul>
+        <li>Docker</li>
+        <li>GitHub</li>
+        <li>Netlify</li>
+        <li>Cloudinary CDN</li>
+        <li>Webpack</li>
+        <li>Nginx</li>
+      </ul>
     </div>
   </div>
 </template>

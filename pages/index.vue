@@ -46,7 +46,16 @@
 
       <section class="section">
         <div class="container">
+          <h3 class="section__title">Proficiencies</h3>
           <proficiencies/>
+        </div>
+      </section>
+
+
+      <section class="section">
+        <div class="container">
+          <h3 class="section__title">Employment History</h3>
+          <employment/>
         </div>
       </section>
     </div>
@@ -56,9 +65,10 @@
 <script>
   import IndexProjects from './-index-projects';
   import Proficiencies from './-index-proficiencies';
+  import Employment from './-index-employment';
 
   export default {
-    components: { Proficiencies, IndexProjects }
+    components: { Employment, Proficiencies, IndexProjects }
   }
 </script>
 
@@ -198,19 +208,19 @@
   }
 
   .portrait--animation {
-    animation: fadein 1000ms;
+    animation: fadein 1000ms ease-out;
   }
 
   .button--animation-1 {
-    animation: fadeinbottom 1000ms;
+    animation: fadeinbottom 1000ms ease-out;
   }
 
   .button--animation-2 {
-    animation: fadeinbottom 1300ms;
+    animation: fadeinbottom 1300ms ease-out;
   }
 
   .fade-left-on-load {
-    animation: fadeinleft 1000ms forwards;
+    animation: fadeinleft 1000ms forwards ease-out;
     opacity: 0;
     animation-delay: 200ms;
   }
@@ -235,9 +245,11 @@
   @keyframes fadein {
     from {
       opacity: 0;
+      transform: scale(0.8);
     }
     to   {
       opacity: 1;
+      transform: scale(1);
     }
   }
 

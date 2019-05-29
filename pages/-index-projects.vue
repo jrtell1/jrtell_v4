@@ -53,6 +53,7 @@
     transition: all 200ms ease-in-out;
     padding: 20px;
     border: 2px solid transparent;
+    animation: projectfadein 400ms ease-out;
   }
 
   @media screen and (max-width: 600px) {
@@ -93,5 +94,16 @@
 
   .project__button {
     margin: 20px 0 0 0;
+  }
+
+  @keyframes projectfadein {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to   {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 </style>
