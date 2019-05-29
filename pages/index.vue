@@ -47,7 +47,39 @@
       <section class="section">
         <div class="container">
           <h3 class="section__title">Proficiencies</h3>
-
+          <div class="proficiencies">
+            <div class="proficiencies__column">
+              <h4 class="proficiencies__title">Languages</h4>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>C#</li>
+                <li>SQL</li>
+                <li>TypeScript</li>
+              </ul>
+            </div>
+            <div class="proficiencies__column">
+              <h4 class="proficiencies__title">Frameworks</h4>
+              <ul>
+                <li>VueJs</li>
+                <li>NuxtJs</li>
+                <li>Laravel</li>
+                <li>Socket.io</li>
+              </ul>
+            </div>
+            <div class="proficiencies__column">
+              <h4 class="proficiencies__title">Tools</h4>
+              <ul>
+                <li>Docker</li>
+                <li>GitHub</li>
+                <li>Netlify</li>
+                <li>Cloudinary CDN</li>
+                <li>Nginx</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -114,7 +146,7 @@
   }
 
   .button--github:hover {
-    background: #542c8e;
+    background: #5b3f84;
   }
 
   .presentation {
@@ -164,6 +196,7 @@
     font-size: 60px;
     letter-spacing: 1px;
     color: white;
+    text-shadow: 0px 0px 3px #000000;
   }
 
   .subtitle {
@@ -174,10 +207,12 @@
     color: white;
     animation-delay: 400ms !important;
     line-height: 25px;
+    text-shadow: 0px 0px 3px #000000;
   }
 
   .subtitle small {
     font-size: 15px;
+    font-style: italic;
   }
 
   .links {
@@ -194,6 +229,40 @@
     text-align: center;
   }
 
+  .proficiencies {
+    display: flex;
+  }
+
+  .proficiencies__column {
+    flex: 1;
+  }
+
+
+  .proficiencies__title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .proficiencies__column ul {
+    padding: 0;
+  }
+
+  .proficiencies__column li {
+    list-style: none;
+    padding: 2px 10px;
+    float: left;
+  }
+
+  .proficiencies__column li::before {
+    border-radius: 3px;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin-right: 5px;
+    background: #1c5ca0;
+  }
+
   .portrait--animation {
     animation: fadein 1000ms;
   }
@@ -208,12 +277,6 @@
 
   .fade-left-on-load {
     animation: fadeinleft 1000ms forwards;
-    opacity: 0;
-    animation-delay: 200ms;
-  }
-
-  .fade-right-on-load {
-    animation: fadeinright 1000ms forwards;
     opacity: 0;
     animation-delay: 200ms;
   }
@@ -259,17 +322,6 @@
     from {
       opacity: 0;
       transform: translateX(-400px);
-    }
-    to   {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
-
-  @keyframes fadeinright {
-    from {
-      opacity: 0;
-      transform: translateX(200px);
     }
     to   {
       opacity: 1;
