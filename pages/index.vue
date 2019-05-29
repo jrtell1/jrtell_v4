@@ -161,7 +161,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url('~assets/trianglify.svg');
+    background: url('~assets/trianglify.svg') #162433 no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
