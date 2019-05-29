@@ -55,9 +55,7 @@
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>PHP</li>
-                <li>C#</li>
                 <li>SQL</li>
-                <li>TypeScript</li>
               </ul>
             </div>
             <div class="proficiencies__column">
@@ -67,6 +65,8 @@
                 <li>NuxtJs</li>
                 <li>Laravel</li>
                 <li>Socket.io</li>
+                <li>Tailwindcss</li>
+                <li>Bulma</li>
               </ul>
             </div>
             <div class="proficiencies__column">
@@ -76,6 +76,7 @@
                 <li>GitHub</li>
                 <li>Netlify</li>
                 <li>Cloudinary CDN</li>
+                <li>Webpack</li>
                 <li>Nginx</li>
               </ul>
             </div>
