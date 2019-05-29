@@ -83,20 +83,12 @@
 
   .button--business {
     border-color: #4F6D7A;
-    color: #4F6D7A;
-  }
-
-  .button--business:hover {
     background: #4F6D7A;
     color: #ffffff;
   }
 
   .button--github {
     border-color: #6e5494;
-    color: #6e5494;
-  }
-
-  .button--github:hover {
     background: #6e5494;
     color: #ffffff;
   }
@@ -169,7 +161,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(rgba(2,2,2, 0.25), rgba(2,2,2, 0.55)), url("https://res.cloudinary.com/jrtell/image/upload/c_fill,fl_progressive,q_auto,w_1920,f_auto/v1552236316/jrtell/bg2.jpg") top no-repeat;
+    background: url('~assets/trianglify.svg');
     background-size: cover;
     background-attachment: fixed;
   }
