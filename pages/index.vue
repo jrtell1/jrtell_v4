@@ -9,7 +9,7 @@
           </h1>
           <h2 class="subtitle fade-left-on-load">
             Fullstack Developer<br>
-            <small>With a JavaScript obsession...</small>
+            <small>With an JavaScript obsession...</small>
           </h2>
           <div class="links">
             <a class="button button--business button--animation-1" href="https://www.linkedin.com/in/john-robin-tell-b8bb235b/" target="_blank" rel="noopener noreferrer">
