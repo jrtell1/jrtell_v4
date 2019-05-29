@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <nuxt />
-  </div>
+  <nuxt />
 </template>
 
 <style>
@@ -16,6 +14,11 @@
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
     color: #22292f;
+    height: 100%;
+  }
+
+  body {
+    height: 100%;
   }
 
   *,
@@ -27,6 +30,11 @@
 
   a {
     color: #35495e;
+  }
+
+  #__layout,
+  #__nuxt {
+    height: 100%;
   }
 
   .button {

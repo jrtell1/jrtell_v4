@@ -1,14 +1,15 @@
 <template>
-  <div>
+  <div class="two-column-layout">
     <section class="hero">
       <div class="container">
         <div class="presentation">
-          <img class="portrait portrait--animation" src="https://res.cloudinary.com/jrtell/image/upload/w_200,h_200,c_fill,g_face,f_auto/v1552242867/jrtell/20190310_155108" alt="Portrait"/>
+          <img class="portrait portrait--animation" src="https://res.cloudinary.com/jrtell/image/upload/w_200,h_200,c_fill,g_face,f_auto/v1552242769/jrtell/Snapchat-1254887129" alt="Portrait"/>
           <h1 class="title fade-left-on-load">
             John-Robin Tell
           </h1>
-          <h2 class="subtitle fade-right-on-load">
-            Fullstack Developer
+          <h2 class="subtitle fade-left-on-load">
+            Fullstack Developer<br>
+            <small>With a JavaScript obsession...</small>
           </h2>
           <div class="links">
             <a class="button button--business button--animation-1" href="https://www.linkedin.com/in/john-robin-tell-b8bb235b/" target="_blank" rel="noopener noreferrer">
@@ -28,21 +29,28 @@
       </div>
     </section>
 
-    <section class="simplicity-container">
-      <div>
-        <h2 class="subtitle">I strive for</h2>
-        <h2 class="title">Simplicity</h2>
-        <h2 class="title">&</h2>
-        <h2 class="title">Excellence</h2>
-      </div>
-    </section>
+    <div class="main-content">
+      <section class="simplicity-container">
+        <div>
+          <h2 class="subtitle">I strive for</h2>
+          <h2 class="title">Simplicity & Excellence</h2>
+        </div>
+      </section>
 
-    <section class="section">
-      <div class="container">
-        <h3 class="section__title">Latest projects</h3>
-        <index-projects/>
-      </div>
-    </section>
+      <section class="section">
+        <div class="container">
+          <h3 class="section__title">Latest projects</h3>
+          <index-projects/>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h3 class="section__title">Proficiencies</h3>
+
+        </div>
+      </section>
+    </div>
   </div>
 </template>
 
@@ -54,10 +62,22 @@
   }
 </script>
 
-<style scoped>
+<style>
+  body {
+    background: url('~assets/trianglify.svg') #162433 no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .two-column-layout {
+    display: flex;
+    height: 100%;
+  }
+
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
+    background: white;
   }
 
   .section__title {
@@ -93,6 +113,10 @@
     color: #ffffff;
   }
 
+  .button--github:hover {
+    background: #542c8e;
+  }
+
   .presentation {
     margin-bottom: 50px;
   }
@@ -104,7 +128,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: #35495e;
+    background: transparent;
     color: white;
     overflow: hidden;
   }
@@ -112,7 +136,7 @@
   .arrows {
     position: absolute;
     bottom: 30px;
-    display: flex;
+    display: none;
     flex-direction: column;
     animation: hover 1500ms infinite;
   }
@@ -148,6 +172,12 @@
     word-spacing: 5px;
     padding-bottom: 15px;
     color: white;
+    animation-delay: 400ms !important;
+    line-height: 25px;
+  }
+
+  .subtitle small {
+    font-size: 15px;
   }
 
   .links {
@@ -155,15 +185,13 @@
   }
 
   .hero {
+    flex: 0 1 auto;
+    height: 100%;
     overflow: hidden;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url('~assets/trianglify.svg') #162433 no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
   }
 
   .portrait--animation {
@@ -188,6 +216,12 @@
     animation: fadeinright 1000ms forwards;
     opacity: 0;
     animation-delay: 200ms;
+  }
+
+  .main-content {
+    flex: 1;
+    height: 100%;
+    overflow-y: auto;
   }
 
   @keyframes fadeinbottom {
@@ -224,7 +258,7 @@
   @keyframes fadeinleft {
     from {
       opacity: 0;
-      transform: translateX(-200px);
+      transform: translateX(-400px);
     }
     to   {
       opacity: 1;
@@ -252,6 +286,25 @@
     }
     100% {
       transform: translateY(-10px);
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    body, html {
+      height: auto;
+    }
+
+    .two-column-layout {
+      display: block;
+    }
+
+    .hero {
+      min-height: 100vh;
+      width: 100%;
+    }
+
+    .arrows {
+      display: flex;
     }
   }
 
